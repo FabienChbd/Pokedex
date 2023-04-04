@@ -2,8 +2,9 @@ import "../App.css";
 
 
 
-function PokemonCard() {
-    const pokemon = pokemonList[0]
+function PokemonCard(props) {
+    console.log(props)
+    const pokemon = props.pokemon
     return (
         < figure className="card" >
             {
@@ -16,16 +17,7 @@ function PokemonCard() {
         </figure >)
 }
 
-const pokemonList = [
-    {
-        name: "BULBIZARRE",
-        imgSrc:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-    },
-    {
-        name: "NEW",
-    },
-];
+
 
 
 export default PokemonCard;
