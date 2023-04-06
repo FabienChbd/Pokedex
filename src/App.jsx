@@ -3,25 +3,34 @@ import NavBar from "./components/NavBar"
 import "./App.css"
 import PropTypes from "prop-types"
 import { useState } from "react"
+import { useEffect } from "react"
 
 
 function App() {
-
   const [pokemonIndex, setPokemonIndex] = useState(0)
   const currentPokemon = pokemonList[pokemonIndex]
-  return (
-    <body>
-      <h1>POKEDEX</h1>
-      <div className="pokedex">
-        <div>
-          <PokemonCard pokemon={currentPokemon} />
 
-        </div>
-        < div className="navigation">
-          <NavBar pokemonList={pokemonList} pokemonIndex={pokemonIndex} setPokemonIndex={setPokemonIndex} />
-        </div>
+
+  useEffect(
+    () => {
+      alert("Hello pokemon trainer :)");
+    },
+    []
+  );
+
+
+  return (
+
+    <><h1>POKEDEX</h1><div className="pokedex">
+      <div>
+        <PokemonCard pokemon={currentPokemon} />
+
       </div>
-    </body >
+      <div className="navigation">
+        <NavBar pokemonList={pokemonList} pokemonIndex={pokemonIndex} setPokemonIndex={setPokemonIndex} />
+      </div>
+    </div></>
+
   )
 }
 
