@@ -10,18 +10,16 @@ function App() {
   const [pokemonIndex, setPokemonIndex] = useState(0)
   const currentPokemon = pokemonList[pokemonIndex]
   return (
-    <body>
-      <h1>POKEDEX</h1>
-      <div className="pokedex">
+    <>
+      <h1>POKEDEX</h1><div className="pokedex">
         <div>
           <PokemonCard pokemon={currentPokemon} />
-
         </div>
-        < div className="navigation">
+        <div>
           <NavBar pokemonList={pokemonList} pokemonIndex={pokemonIndex} setPokemonIndex={setPokemonIndex} />
         </div>
       </div>
-    </body >
+    </>
   )
 }
 

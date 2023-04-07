@@ -29,7 +29,7 @@ body {
   background-color: rgb(230, 228, 228);
   display: flex;
   flex-direction: column;
-  place-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -37,6 +37,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center;
 }
 
 button {
@@ -48,6 +49,7 @@ button {
   font-family: inherit;
   background-color: red;
   cursor: pointer;
+  width: 150px
 }
 
 button:hover {
