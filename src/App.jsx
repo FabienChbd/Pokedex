@@ -47,7 +47,7 @@ const pokemonList = [
   {
     name: "MEW",
      imgSrc:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png"
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
   },
 ];
 
